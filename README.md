@@ -3,7 +3,7 @@
 
 ## Nhóm
 
-| Thành viên | MSSV | Role |
+| Thành viên | MSSV | 
 |---|---|
 | Lê Quốc Anh | 2A202600824 | 
 | Nguyễn Đức Khang | 2A202600588 | 
