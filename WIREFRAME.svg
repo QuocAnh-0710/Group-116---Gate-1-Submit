@@ -1,0 +1,555 @@
+<svg viewBox="0 0 1400 1980" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1400" height="1980" fill="#F8F9FA"/>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="1400" height="64" fill="#1A56A0"/>
+  <text x="700" y="22" text-anchor="middle" fill="#93C5FD" font-size="11" font-weight="500" letter-spacing="2">AI20K-223</text>
+  <text x="700" y="44" text-anchor="middle" fill="white" font-size="20" font-weight="700">AI Quality Intelligence Platform — UI Flow</text>
+
+  <!-- ── LEGEND ── -->
+  <rect x="40" y="80" width="600" height="36" rx="6" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="56" y="92" width="14" height="14" rx="2" fill="#1A56A0"/>
+  <text x="78" y="103" fill="#374151" font-size="11">Screen / Page</text>
+  <rect x="156" y="92" width="14" height="14" rx="2" fill="#DBEAFE" stroke="#1A56A0" stroke-width="1.5"/>
+  <text x="178" y="103" fill="#374151" font-size="11">Component</text>
+  <rect x="264" y="92" width="14" height="14" rx="2" fill="#D1FAE5" stroke="#065F46" stroke-width="1.5"/>
+  <text x="286" y="103" fill="#374151" font-size="11">Action/State</text>
+  <rect x="372" y="92" width="14" height="14" rx="2" fill="#FEF3C7" stroke="#92400E" stroke-width="1.5"/>
+  <text x="394" y="103" fill="#374151" font-size="11">Data/DB</text>
+  <line x1="470" y1="99" x2="500" y2="99" stroke="#6B7280" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="508" y="103" fill="#374151" font-size="11">Flow</text>
+
+  <!-- ═══════════════════════════════════════════════
+       ROW 1: LOGIN + SIDEBAR NAV
+  ═══════════════════════════════════════════════ -->
+
+  <!-- LOGIN SCREEN -->
+  <rect x="40" y="136" width="280" height="220" rx="8" fill="white" stroke="#1A56A0" stroke-width="2"/>
+  <rect x="40" y="136" width="280" height="32" rx="8" fill="#1A56A0"/>
+  <rect x="40" y="152" width="280" height="16" fill="#1A56A0"/>
+  <text x="180" y="157" text-anchor="middle" fill="white" font-size="12" font-weight="700">LOGIN</text>
+  <text x="180" y="188" text-anchor="middle" fill="#6B7280" font-size="10">AI Quality Intelligence Platform</text>
+  <rect x="68" y="200" width="224" height="24" rx="4" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="1"/>
+  <text x="80" y="216" fill="#9CA3AF" font-size="10">Email</text>
+  <rect x="68" y="232" width="224" height="24" rx="4" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="1"/>
+  <text x="80" y="248" fill="#9CA3AF" font-size="10">Password</text>
+  <rect x="68" y="264" width="224" height="28" rx="4" fill="#1A56A0"/>
+  <text x="180" y="282" text-anchor="middle" fill="white" font-size="11" font-weight="600">Đăng nhập</text>
+  <text x="180" y="318" text-anchor="middle" fill="#6B7280" font-size="9">4 roles: admin · ops · analyst · viewer</text>
+  <text x="180" y="332" text-anchor="middle" fill="#6B7280" font-size="9">JWT Auth — route theo role sau login</text>
+
+  <!-- Arrow: Login → Sidebar -->
+  <line x1="320" y1="246" x2="356" y2="246" stroke="#6B7280" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arrow)"/>
+
+  <!-- SIDEBAR NAV -->
+  <rect x="356" y="136" width="160" height="220" rx="8" fill="white" stroke="#1A56A0" stroke-width="2"/>
+  <rect x="356" y="136" width="160" height="32" rx="8" fill="#1A56A0"/>
+  <rect x="356" y="152" width="160" height="16" fill="#1A56A0"/>
+  <text x="436" y="157" text-anchor="middle" fill="white" font-size="12" font-weight="700">SIDEBAR NAV</text>
+  <rect x="370" y="178" width="132" height="22" rx="4" fill="#DBEAFE" stroke="#1A56A0" stroke-width="1"/>
+  <text x="436" y="193" text-anchor="middle" fill="#1A56A0" font-size="10" font-weight="600">📊 Dashboard</text>
+  <rect x="370" y="206" width="132" height="22" rx="4" fill="#F3F4F6"/>
+  <text x="436" y="221" text-anchor="middle" fill="#374151" font-size="10">🔔 Alerts</text>
+  <rect x="370" y="234" width="132" height="22" rx="4" fill="#F3F4F6"/>
+  <text x="436" y="249" text-anchor="middle" fill="#374151" font-size="10">🎫 Tickets</text>
+  <rect x="370" y="262" width="132" height="22" rx="4" fill="#F3F4F6"/>
+  <text x="436" y="277" text-anchor="middle" fill="#374151" font-size="10">💬 Chat (RAG)</text>
+  <rect x="370" y="290" width="132" height="22" rx="4" fill="#F3F4F6"/>
+  <text x="436" y="305" text-anchor="middle" fill="#374151" font-size="10">👥 Users (admin)</text>
+  <text x="436" y="334" text-anchor="middle" fill="#9CA3AF" font-size="9">Role-based: viewer thấy ít tab hơn</text>
+
+  <!-- ═══════════════════════════════════════════════
+       ROW 1 CONT: DATA UPLOAD
+  ═══════════════════════════════════════════════ -->
+  <rect x="560" y="136" width="280" height="220" rx="8" fill="white" stroke="#1A56A0" stroke-width="2"/>
+  <rect x="560" y="136" width="280" height="32" rx="8" fill="#1A56A0"/>
+  <rect x="560" y="152" width="280" height="16" fill="#1A56A0"/>
+  <text x="700" y="157" text-anchor="middle" fill="white" font-size="12" font-weight="700">DATA UPLOAD / INGEST</text>
+  <!-- upload zone -->
+  <rect x="576" y="176" width="248" height="60" rx="6" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="700" y="200" text-anchor="middle" fill="#0369A1" font-size="11">📁 Kéo thả CSV vào đây</text>
+  <text x="700" y="216" text-anchor="middle" fill="#9CA3AF" font-size="9">hoặc click để chọn file</text>
+  <text x="700" y="228" text-anchor="middle" fill="#9CA3AF" font-size="9">fields: text, area, driver_id, timestamp</text>
+  <!-- fields preview -->
+  <rect x="576" y="244" width="248" height="52" rx="4" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="588" y="258" fill="#374151" font-size="9" font-weight="600">Preview (5 dòng đầu):</text>
+  <text x="588" y="271" fill="#6B7280" font-size="8" font-family="monospace">text | area | driver_id | timestamp</text>
+  <text x="588" y="283" fill="#6B7280" font-size="8" font-family="monospace">Tài xế thái độ tệ | Q7 | TX001 | ...</text>
+  <!-- buttons -->
+  <rect x="576" y="304" width="116" height="24" rx="4" fill="#E5E7EB"/>
+  <text x="634" y="320" text-anchor="middle" fill="#374151" font-size="10">Huỷ</text>
+  <rect x="700" y="304" width="124" height="24" rx="4" fill="#1A56A0"/>
+  <text x="762" y="320" text-anchor="middle" fill="white" font-size="10" font-weight="600">Upload &amp; Process →</text>
+  <text x="700" y="346" text-anchor="middle" fill="#9CA3AF" font-size="9">Webhook: POST /api/feedback/ingest</text>
+
+  <!-- Arrow Upload → ML -->
+  <line x1="840" y1="246" x2="872" y2="246" stroke="#6B7280" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arrow)"/>
+
+  <!-- ML PIPELINE STATUS -->
+  <rect x="872" y="136" width="240" height="220" rx="8" fill="white" stroke="#065F46" stroke-width="2"/>
+  <rect x="872" y="136" width="240" height="32" rx="8" fill="#065F46"/>
+  <rect x="872" y="152" width="240" height="16" fill="#065F46"/>
+  <text x="992" y="157" text-anchor="middle" fill="white" font-size="12" font-weight="700">ML PIPELINE STATUS</text>
+  <rect x="884" y="176" width="216" height="18" rx="3" fill="#D1FAE5"/>
+  <text x="992" y="189" text-anchor="middle" fill="#065F46" font-size="10">① Cleaning — bỏ spam, PII mask</text>
+  <rect x="884" y="200" width="216" height="18" rx="3" fill="#D1FAE5"/>
+  <text x="992" y="213" text-anchor="middle" fill="#065F46" font-size="10">② TF-IDF + LinearSVC classify</text>
+  <rect x="884" y="224" width="216" height="18" rx="3" fill="#D1FAE5"/>
+  <text x="992" y="237" text-anchor="middle" fill="#065F46" font-size="10">③ Severity + Safety rule cứng</text>
+  <rect x="884" y="248" width="216" height="18" rx="3" fill="#D1FAE5"/>
+  <text x="992" y="261" text-anchor="middle" fill="#065F46" font-size="10">④ Spike detection (SQL)</text>
+  <rect x="884" y="272" width="216" height="18" rx="3" fill="#D1FAE5"/>
+  <text x="992" y="285" text-anchor="middle" fill="#065F46" font-size="10">⑤ Gemini Flash → ticket</text>
+  <!-- progress bar -->
+  <rect x="884" y="298" width="216" height="8" rx="4" fill="#E5E7EB"/>
+  <rect x="884" y="298" width="160" height="8" rx="4" fill="#10B981"/>
+  <text x="992" y="322" text-anchor="middle" fill="#6B7280" font-size="9">APScheduler: chạy mỗi 10 phút</text>
+  <text x="992" y="336" text-anchor="middle" fill="#6B7280" font-size="9">Batch: 100–150 feedback / lô</text>
+
+  <!-- Arrow ML → DB -->
+  <line x1="1112" y1="246" x2="1140" y2="246" stroke="#6B7280" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arrow)"/>
+
+  <!-- SUPABASE DB -->
+  <rect x="1140" y="136" width="220" height="220" rx="8" fill="#FFFBEB" stroke="#92400E" stroke-width="2"/>
+  <rect x="1140" y="136" width="220" height="32" rx="8" fill="#92400E"/>
+  <rect x="1140" y="152" width="220" height="16" fill="#92400E"/>
+  <text x="1250" y="157" text-anchor="middle" fill="white" font-size="12" font-weight="700">SUPABASE (DB)</text>
+  <rect x="1152" y="176" width="196" height="18" rx="3" fill="#FEF3C7" stroke="#FCD34D" stroke-width="1"/>
+  <text x="1250" y="189" text-anchor="middle" fill="#92400E" font-size="10">feedback_raw</text>
+  <rect x="1152" y="200" width="196" height="18" rx="3" fill="#FEF3C7" stroke="#FCD34D" stroke-width="1"/>
+  <text x="1250" y="213" text-anchor="middle" fill="#92400E" font-size="10">feedback_processed</text>
+  <rect x="1152" y="224" width="196" height="18" rx="3" fill="#FEF3C7" stroke="#FCD34D" stroke-width="1"/>
+  <text x="1250" y="237" text-anchor="middle" fill="#92400E" font-size="10">alerts</text>
+  <rect x="1152" y="248" width="196" height="18" rx="3" fill="#FEF3C7" stroke="#FCD34D" stroke-width="1"/>
+  <text x="1250" y="261" text-anchor="middle" fill="#92400E" font-size="10">tickets</text>
+  <rect x="1152" y="272" width="196" height="18" rx="3" fill="#FEF3C7" stroke="#FCD34D" stroke-width="1"/>
+  <text x="1250" y="285" text-anchor="middle" fill="#92400E" font-size="10">correction_logs</text>
+  <rect x="1152" y="296" width="196" height="18" rx="3" fill="#FEF3C7" stroke="#FCD34D" stroke-width="1"/>
+  <text x="1250" y="309" text-anchor="middle" fill="#92400E" font-size="10">users</text>
+  <text x="1250" y="334" text-anchor="middle" fill="#9CA3AF" font-size="9">Python ghi · Frontend đọc</text>
+
+  <!-- ═══════════════════════════════════════════════
+       ROW 2: DASHBOARD
+  ═══════════════════════════════════════════════ -->
+  <text x="40" y="388" fill="#1A56A0" font-size="13" font-weight="700">① /dashboard</text>
+  <line x1="40" y1="394" x2="1360" y2="394" stroke="#E2E8F0" stroke-width="1"/>
+
+  <rect x="40" y="404" width="840" height="360" rx="8" fill="white" stroke="#1A56A0" stroke-width="2"/>
+  <rect x="40" y="404" width="840" height="32" rx="8" fill="#1A56A0"/>
+  <rect x="40" y="420" width="840" height="16" fill="#1A56A0"/>
+  <text x="460" y="425" text-anchor="middle" fill="white" font-size="13" font-weight="700">DASHBOARD — Overview</text>
+
+  <!-- KPI cards row -->
+  <rect x="56" y="444" width="188" height="64" rx="6" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="150" y="464" text-anchor="middle" fill="#1D4ED8" font-size="10" font-weight="600">Tổng feedback hôm nay</text>
+  <text x="150" y="490" text-anchor="middle" fill="#1A56A0" font-size="22" font-weight="700">1,247</text>
+  <text x="150" y="504" text-anchor="middle" fill="#6B7280" font-size="9">↑ 12% so với hôm qua</text>
+
+  <rect x="256" y="444" width="188" height="64" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="350" y="464" text-anchor="middle" fill="#DC2626" font-size="10" font-weight="600">% Negative</text>
+  <text x="350" y="490" text-anchor="middle" fill="#DC2626" font-size="22" font-weight="700">23.4%</text>
+  <text x="350" y="504" text-anchor="middle" fill="#6B7280" font-size="9">↑ 5% — cần chú ý</text>
+
+  <rect x="456" y="444" width="188" height="64" rx="6" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1"/>
+  <text x="550" y="464" text-anchor="middle" fill="#EA580C" font-size="10" font-weight="600">Active Alerts</text>
+  <text x="550" y="490" text-anchor="middle" fill="#EA580C" font-size="22" font-weight="700">7</text>
+  <text x="550" y="504" text-anchor="middle" fill="#6B7280" font-size="9">3 severity cao ≥ 4</text>
+
+  <rect x="656" y="444" width="188" height="64" rx="6" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+  <text x="750" y="464" text-anchor="middle" fill="#16A34A" font-size="10" font-weight="600">SLA Compliance</text>
+  <text x="750" y="490" text-anchor="middle" fill="#16A34A" font-size="22" font-weight="700">91%</text>
+  <text x="750" y="504" text-anchor="middle" fill="#6B7280" font-size="9">2 tickets sắp quá hạn</text>
+
+  <!-- Trend chart placeholder -->
+  <rect x="56" y="520" width="500" height="140" rx="6" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="72" y="538" fill="#374151" font-size="10" font-weight="600">Sentiment Trend — 7 ngày</text>
+  <!-- fake line chart -->
+  <polyline points="80,620 140,610 200,615 260,590 320,580 380,600 440,570 500,575" fill="none" stroke="#10B981" stroke-width="2"/>
+  <polyline points="80,640 140,650 200,645 260,665 320,660 380,655 440,670 500,680" fill="none" stroke="#EF4444" stroke-width="2"/>
+  <circle cx="440" cy="670" r="5" fill="#EF4444"/>
+  <text x="445" y="667" fill="#EF4444" font-size="8">spike!</text>
+  <line x1="80" y1="648" x2="500" y2="648" stroke="#E5E7EB" stroke-width="0.5"/>
+  <text x="80" y="655" fill="#9CA3AF" font-size="8">T2</text>
+  <text x="160" y="655" fill="#9CA3AF" font-size="8">T3</text>
+  <text x="240" y="655" fill="#9CA3AF" font-size="8">T4</text>
+  <text x="320" y="655" fill="#9CA3AF" font-size="8">T5</text>
+  <text x="400" y="655" fill="#9CA3AF" font-size="8">T6</text>
+  <text x="476" y="655" fill="#9CA3AF" font-size="8">T7</text>
+  <!-- legend -->
+  <line x1="80" y1="648" x2="96" y2="648" stroke="#10B981" stroke-width="2"/>
+  <text x="100" y="651" fill="#6B7280" font-size="8">Positive</text>
+  <line x1="136" y1="648" x2="152" y2="648" stroke="#EF4444" stroke-width="2"/>
+  <text x="156" y="651" fill="#6B7280" font-size="8">Negative</text>
+
+  <!-- Heatmap placeholder -->
+  <rect x="568" y="520" width="296" height="140" rx="6" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="584" y="538" fill="#374151" font-size="10" font-weight="600">Heatmap — Khu vực có vấn đề</text>
+  <!-- heatmap cells -->
+  <rect x="584" y="548" width="60" height="20" rx="2" fill="#FEE2E2"/>
+  <text x="614" y="562" text-anchor="middle" fill="#991B1B" font-size="9">Quận 7</text>
+  <rect x="652" y="548" width="60" height="20" rx="2" fill="#FECACA"/>
+  <text x="682" y="562" text-anchor="middle" fill="#991B1B" font-size="9">Bình Thạnh</text>
+  <rect x="720" y="548" width="60" height="20" rx="2" fill="#FEF3C7"/>
+  <text x="750" y="562" text-anchor="middle" fill="#92400E" font-size="9">Thủ Đức</text>
+  <rect x="788" y="548" width="60" height="20" rx="2" fill="#D1FAE5"/>
+  <text x="818" y="562" text-anchor="middle" fill="#065F46" font-size="9">Quận 1</text>
+  <rect x="584" y="576" width="60" height="20" rx="2" fill="#FECACA"/>
+  <text x="614" y="590" text-anchor="middle" fill="#991B1B" font-size="9">Driver</text>
+  <rect x="652" y="576" width="60" height="20" rx="2" fill="#FEF3C7"/>
+  <text x="682" y="590" text-anchor="middle" fill="#92400E" font-size="9">App</text>
+  <rect x="720" y="576" width="60" height="20" rx="2" fill="#D1FAE5"/>
+  <text x="750" y="590" text-anchor="middle" fill="#065F46" font-size="9">Pricing</text>
+  <rect x="788" y="576" width="60" height="20" rx="2" fill="#DBEAFE"/>
+  <text x="818" y="590" text-anchor="middle" fill="#1E40AF" font-size="9">Safety</text>
+  <!-- color scale -->
+  <text x="584" y="626" fill="#9CA3AF" font-size="8">Thấp</text>
+  <rect x="608" y="618" width="120" height="8" rx="2" fill="url(#heatGrad)"/>
+  <text x="736" y="626" fill="#9CA3AF" font-size="8">Cao</text>
+  <text x="716" y="650" text-anchor="middle" fill="#6B7280" font-size="9">Filter: khu vực · chủ đề · thời gian</text>
+
+  <!-- Topic breakdown -->
+  <rect x="56" y="672" width="808" height="76" rx="6" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="72" y="690" fill="#374151" font-size="10" font-weight="600">Top Issues hôm nay</text>
+  <!-- bars -->
+  <rect x="72" y="698" width="180" height="14" rx="2" fill="#FEE2E2"/>
+  <rect x="72" y="698" width="180" height="14" rx="2" fill="#EF4444" opacity="0.7"/>
+  <text x="258" y="709" fill="#374151" font-size="9">Driver Behavior — 312</text>
+  <rect x="72" y="718" width="120" height="14" rx="2" fill="#FEF3C7"/>
+  <rect x="72" y="718" width="120" height="14" rx="2" fill="#F59E0B" opacity="0.7"/>
+  <text x="198" y="729" fill="#374151" font-size="9">App Issue — 208</text>
+  <rect x="420" y="698" width="90" height="14" rx="2" fill="#FCE7F3"/>
+  <rect x="420" y="698" width="90" height="14" rx="2" fill="#EC4899" opacity="0.7"/>
+  <text x="516" y="709" fill="#374151" font-size="9">Safety — 47 🚨</text>
+  <rect x="420" y="718" width="60" height="14" rx="2" fill="#E0E7FF"/>
+  <rect x="420" y="718" width="60" height="14" rx="2" fill="#6366F1" opacity="0.7"/>
+  <text x="486" y="729" fill="#374151" font-size="9">Pricing — 31</text>
+
+  <!-- Arrow Dashboard → Alerts -->
+  <line x1="460" y1="764" x2="460" y2="796" stroke="#6B7280" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arrow)"/>
+
+  <!-- ═══════════════════════════════════════════════
+       ROW 3: ALERTS
+  ═══════════════════════════════════════════════ -->
+  <text x="40" y="820" fill="#1A56A0" font-size="13" font-weight="700">② /alerts</text>
+  <line x1="40" y1="826" x2="1360" y2="826" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- ALERTS LIST -->
+  <rect x="40" y="836" width="520" height="340" rx="8" fill="white" stroke="#1A56A0" stroke-width="2"/>
+  <rect x="40" y="836" width="520" height="32" rx="8" fill="#1A56A0"/>
+  <rect x="40" y="852" width="520" height="16" fill="#1A56A0"/>
+  <text x="300" y="857" text-anchor="middle" fill="white" font-size="12" font-weight="700">ALERTS LIST</text>
+  <!-- filter bar -->
+  <rect x="56" y="876" width="488" height="24" rx="4" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="72" y="892" fill="#9CA3AF" font-size="9">🔍 Lọc theo: severity · category · khu vực · trạng thái</text>
+  <!-- Alert item 1 - SAFETY -->
+  <rect x="56" y="908" width="488" height="68" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1.5"/>
+  <rect x="56" y="908" width="4" height="68" rx="2" fill="#DC2626"/>
+  <text x="72" y="924" fill="#DC2626" font-size="10" font-weight="700">🚨 SAFETY — Severity 5 · Urgent</text>
+  <rect x="400" y="912" width="60" height="16" rx="3" fill="#DC2626"/>
+  <text x="430" y="923" text-anchor="middle" fill="white" font-size="8" font-weight="600">SAFETY 5</text>
+  <rect x="466" y="912" width="68" height="16" rx="3" fill="#FCA5A5"/>
+  <text x="500" y="923" text-anchor="middle" fill="#991B1B" font-size="8">needs review</text>
+  <text x="72" y="940" fill="#374151" font-size="10">Dangerous driving spike — Cầu Giấy · 3× baseline</text>
+  <text x="72" y="954" fill="#6B7280" font-size="9">8 feedback trong 2 giờ · evidence: [fb_001, fb_003, fb_007...]</text>
+  <text x="72" y="966" fill="#9CA3AF" font-size="9">Gemini đề xuất → Safety Team · SLA: 2 giờ</text>
+  <text x="456" y="966" fill="#1A56A0" font-size="9" text-decoration="underline" cursor="pointer">Xem chi tiết →</text>
+  <!-- Alert item 2 -->
+  <rect x="56" y="984" width="488" height="56" rx="6" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1"/>
+  <rect x="56" y="984" width="4" height="56" rx="2" fill="#F97316"/>
+  <text x="72" y="1000" fill="#EA580C" font-size="10" font-weight="700">⚠ APP ISSUE — Severity 3 · 24h</text>
+  <rect x="400" y="988" width="60" height="16" rx="3" fill="#FB923C"/>
+  <text x="430" y="999" text-anchor="middle" fill="white" font-size="8" font-weight="600">APP 3</text>
+  <text x="72" y="1016" fill="#374151" font-size="10">Login crash spike — App v2.3.1 · 2.5× baseline</text>
+  <text x="72" y="1030" fill="#6B7280" font-size="9">15 feedback · khu vực: Hà Nội · evidence: [fb_021...]</text>
+  <!-- Alert item 3 -->
+  <rect x="56" y="1048" width="488" height="56" rx="6" fill="#FFFBEB" stroke="#FDE68A" stroke-width="1"/>
+  <rect x="56" y="1048" width="4" height="56" rx="2" fill="#EAB308"/>
+  <text x="72" y="1064" fill="#A16207" font-size="10" font-weight="700">📋 DRIVER BEHAVIOR — Severity 2 · 48h</text>
+  <rect x="400" y="1052" width="60" height="16" rx="3" fill="#EAB308"/>
+  <text x="430" y="1063" text-anchor="middle" fill="white" font-size="8" font-weight="600">DRIVER 2</text>
+  <text x="72" y="1080" fill="#374151" font-size="10">TX-0042 — 5 khiếu nại trong 3 ngày · pattern lặp</text>
+  <text x="72" y="1094" fill="#6B7280" font-size="9">evidence: [fb_045, fb_051, fb_063...]</text>
+  <!-- pagination -->
+  <text x="300" y="1158" text-anchor="middle" fill="#6B7280" font-size="9">← 1 2 3 ... 7 → · Tổng 7 alerts active</text>
+
+  <!-- Arrow Alert → Detail -->
+  <line x1="560" y1="960" x2="592" y2="960" stroke="#6B7280" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arrow)"/>
+
+  <!-- ALERT DETAIL -->
+  <rect x="592" y="836" width="440" height="340" rx="8" fill="white" stroke="#DC2626" stroke-width="2"/>
+  <rect x="592" y="836" width="440" height="32" rx="8" fill="#DC2626"/>
+  <rect x="592" y="852" width="440" height="16" fill="#DC2626"/>
+  <text x="812" y="857" text-anchor="middle" fill="white" font-size="12" font-weight="700">ALERT DETAIL + HUMAN REVIEW</text>
+  <!-- LLM Summary box -->
+  <rect x="608" y="876" width="408" height="80" rx="6" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1"/>
+  <text x="620" y="890" fill="#991B1B" font-size="10" font-weight="600">🤖 Gemini Flash Summary</text>
+  <text x="620" y="904" fill="#374151" font-size="9">Phát hiện 8 phản hồi về lái xe nguy hiểm tại Cầu Giấy</text>
+  <text x="620" y="916" fill="#374151" font-size="9">trong 2 giờ gần nhất — tăng 3× so với baseline 7 ngày.</text>
+  <text x="620" y="928" fill="#6B7280" font-size="9">Root cause: tài xế mới onboard chưa qua đào tạo an toàn.</text>
+  <text x="620" y="940" fill="#6B7280" font-size="9">Action: Tạm dừng TX-0089, liên hệ Safety Team ngay.</text>
+  <text x="620" y="952" fill="#9CA3AF" font-size="8">Evidence IDs: fb_001, fb_003, fb_007, fb_009... (8 records)</text>
+  <!-- Evidence list -->
+  <text x="620" y="972" fill="#374151" font-size="10" font-weight="600">Evidence Feedback (click để xem gốc)</text>
+  <rect x="608" y="978" width="408" height="18" rx="3" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="620" y="991" fill="#374151" font-size="9">fb_001 · "Tài xế vượt đèn đỏ ở Cầu Giấy, nguy hiểm lắm"</text>
+  <rect x="930" y="980" width="76" height="14" rx="2" fill="#DBEAFE"/>
+  <text x="968" y="991" text-anchor="middle" fill="#1E40AF" font-size="8">Driver→Safety ✓</text>
+  <rect x="608" y="1000" width="408" height="18" rx="3" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="620" y="1013" fill="#374151" font-size="9">fb_003 · "Chạy tốc độ cao, bỏ qua biển dừng"</text>
+  <rect x="930" y="1002" width="76" height="14" rx="2" fill="#FEF9C3"/>
+  <text x="968" y="1013" text-anchor="middle" fill="#854D0E" font-size="8">needs review ⚠</text>
+  <!-- Human review action -->
+  <rect x="608" y="1026" width="408" height="56" rx="6" fill="#F0FFF4" stroke="#BBF7D0" stroke-width="1.5"/>
+  <text x="620" y="1041" fill="#065F46" font-size="10" font-weight="600">Human Review — fb_003 (confidence: 0.51)</text>
+  <text x="620" y="1055" fill="#6B7280" font-size="9">AI gán: Driver Behavior  →  Sửa thành:</text>
+  <rect x="720" y="1046" width="120" height="18" rx="3" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+  <text x="734" y="1059" fill="#374151" font-size="9">Safety Issue ▼</text>
+  <rect x="852" y="1046" width="60" height="18" rx="3" fill="#065F46"/>
+  <text x="882" y="1059" text-anchor="middle" fill="white" font-size="9" font-weight="600">Xác nhận</text>
+  <text x="620" y="1074" fill="#9CA3AF" font-size="8">→ lưu vào correction_logs · dùng retrain</text>
+  <!-- Assign ticket -->
+  <rect x="608" y="1090" width="408" height="36" rx="6" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.5"/>
+  <text x="620" y="1106" fill="#1E40AF" font-size="10" font-weight="600">Tạo Ticket →</text>
+  <text x="700" y="1106" fill="#374151" font-size="9">Safety Team · SLA: 2 giờ</text>
+  <rect x="940" y="1094" width="60" height="24" rx="4" fill="#1A56A0"/>
+  <text x="970" y="1110" text-anchor="middle" fill="white" font-size="10" font-weight="600">Assign</text>
+  <text x="812" y="1164" text-anchor="middle" fill="#9CA3AF" font-size="9">← Back to Alerts list</text>
+
+  <!-- ═══════════════════════════════════════════════
+       ROW 4: TICKETS + CHAT
+  ═══════════════════════════════════════════════ -->
+  <text x="40" y="1212" fill="#1A56A0" font-size="13" font-weight="700">③ /tickets</text>
+  <line x1="40" y1="1218" x2="1360" y2="1218" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- TICKETS LIST -->
+  <rect x="40" y="1228" width="560" height="300" rx="8" fill="white" stroke="#1A56A0" stroke-width="2"/>
+  <rect x="40" y="1228" width="560" height="32" rx="8" fill="#1A56A0"/>
+  <rect x="40" y="1244" width="560" height="16" fill="#1A56A0"/>
+  <text x="320" y="1249" text-anchor="middle" fill="white" font-size="12" font-weight="700">TICKETS — SLA Tracking</text>
+  <!-- table header -->
+  <rect x="56" y="1268" width="528" height="20" rx="3" fill="#F3F4F6"/>
+  <text x="72" y="1282" fill="#6B7280" font-size="9" font-weight="600">ID</text>
+  <text x="116" y="1282" fill="#6B7280" font-size="9" font-weight="600">Alert</text>
+  <text x="240" y="1282" fill="#6B7280" font-size="9" font-weight="600">Team</text>
+  <text x="316" y="1282" fill="#6B7280" font-size="9" font-weight="600">SLA</text>
+  <text x="390" y="1282" fill="#6B7280" font-size="9" font-weight="600">Status</text>
+  <text x="464" y="1282" fill="#6B7280" font-size="9" font-weight="600">Assignee</text>
+  <!-- row 1 - overdue -->
+  <rect x="56" y="1292" width="528" height="22" rx="3" fill="#FEF2F2"/>
+  <text x="72" y="1307" fill="#374151" font-size="9">#T-001</text>
+  <text x="116" y="1307" fill="#374151" font-size="9">Safety - Cầu Giấy</text>
+  <text x="240" y="1307" fill="#374151" font-size="9">Safety</text>
+  <text x="316" y="1307" fill="#DC2626" font-size="9" font-weight="600">1h 23m ⚠</text>
+  <rect x="386" y="1295" width="72" height="14" rx="3" fill="#FEE2E2" stroke="#FECACA" stroke-width="1"/>
+  <text x="422" y="1306" text-anchor="middle" fill="#DC2626" font-size="8">Investigating</text>
+  <text x="464" y="1307" fill="#374151" font-size="9">a.nguyen</text>
+  <!-- row 2 -->
+  <rect x="56" y="1318" width="528" height="22" rx="3" fill="white"/>
+  <text x="72" y="1333" fill="#374151" font-size="9">#T-002</text>
+  <text x="116" y="1333" fill="#374151" font-size="9">App crash v2.3.1</text>
+  <text x="240" y="1333" fill="#374151" font-size="9">Product</text>
+  <text x="316" y="1333" fill="#6B7280" font-size="9">18h 40m</text>
+  <rect x="386" y="1321" width="72" height="14" rx="3" fill="#FEF3C7" stroke="#FDE68A" stroke-width="1"/>
+  <text x="422" y="1332" text-anchor="middle" fill="#92400E" font-size="8">Assigned</text>
+  <text x="464" y="1333" fill="#374151" font-size="9">m.tran</text>
+  <!-- row 3 -->
+  <rect x="56" y="1344" width="528" height="22" rx="3" fill="#F9FAFB"/>
+  <text x="72" y="1359" fill="#374151" font-size="9">#T-003</text>
+  <text x="116" y="1359" fill="#374151" font-size="9">Driver TX-0042</text>
+  <text x="240" y="1359" fill="#374151" font-size="9">Ops</text>
+  <text x="316" y="1359" fill="#6B7280" font-size="9">42h 10m</text>
+  <rect x="386" y="1347" width="72" height="14" rx="3" fill="#D1FAE5" stroke="#A7F3D0" stroke-width="1"/>
+  <text x="422" y="1358" text-anchor="middle" fill="#065F46" font-size="8">Resolved</text>
+  <text x="464" y="1359" fill="#374151" font-size="9">k.le</text>
+  <!-- Status workflow -->
+  <rect x="56" y="1376" width="528" height="36" rx="6" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="72" y="1390" fill="#1E40AF" font-size="9" font-weight="600">Status Workflow:</text>
+  <text x="72" y="1404" fill="#374151" font-size="9">New → Assigned → Investigating → Resolved → Monitoring → Closed</text>
+  <!-- SLA summary -->
+  <rect x="56" y="1420" width="252" height="40" rx="6" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+  <text x="72" y="1436" fill="#065F46" font-size="9" font-weight="600">SLA Compliance tuần này</text>
+  <text x="72" y="1452" fill="#16A34A" font-size="16" font-weight="700">91.2%</text>
+  <rect x="316" y="1420" width="268" height="40" rx="6" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="332" y="1436" fill="#991B1B" font-size="9" font-weight="600">Sắp quá hạn SLA</text>
+  <text x="332" y="1452" fill="#DC2626" font-size="9">#T-001 còn 37 phút · #T-005 còn 2h</text>
+  <text x="320" y="1510" text-anchor="middle" fill="#9CA3AF" font-size="9">Click row → Ticket Detail · Ghi resolution note · Đổi status</text>
+
+  <!-- Arrow Tickets → Chat -->
+  <line x1="600" y1="1378" x2="632" y2="1378" stroke="#6B7280" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arrow)"/>
+
+  <!-- CHAT RAG -->
+  <rect x="632" y="1228" width="400" height="300" rx="8" fill="white" stroke="#7C3AED" stroke-width="2"/>
+  <rect x="632" y="1228" width="400" height="32" rx="8" fill="#7C3AED"/>
+  <rect x="632" y="1244" width="400" height="16" fill="#7C3AED"/>
+  <text x="832" y="1249" text-anchor="middle" fill="white" font-size="12" font-weight="700">CHAT — RAG Insight</text>
+  <!-- chat messages -->
+  <rect x="648" y="1268" width="368" height="40" rx="6" fill="#EDE9FE" stroke="#DDD6FE" stroke-width="1"/>
+  <text x="660" y="1283" fill="#5B21B6" font-size="9" font-weight="600">Ops Manager hỏi:</text>
+  <text x="660" y="1297" fill="#374151" font-size="9">"Vì sao rating giảm ở Quận 7 tuần này?"</text>
+  <!-- AI response -->
+  <rect x="648" y="1316" width="368" height="84" rx="6" fill="#F5F3FF" stroke="#DDD6FE" stroke-width="1"/>
+  <text x="660" y="1331" fill="#5B21B6" font-size="9" font-weight="600">🤖 Gemini Flash trả lời:</text>
+  <text x="660" y="1345" fill="#374151" font-size="9">Rating tại Q7 giảm 0.4 điểm trong 7 ngày do</text>
+  <text x="660" y="1357" fill="#374151" font-size="9">tăng đột biến phản hồi về Driver Behavior (+34%)</text>
+  <text x="660" y="1369" fill="#374151" font-size="9">và App Issue (+21%). Tập trung khung 17–19h.</text>
+  <text x="660" y="1381" fill="#6B7280" font-size="8">📎 Evidence: fb_021, fb_034, fb_056 · Xem chi tiết →</text>
+  <text x="660" y="1393" fill="#9CA3AF" font-size="8">Nguồn: 47 feedback từ feedback_processed + 2 alerts</text>
+  <!-- input -->
+  <rect x="648" y="1408" width="300" height="28" rx="4" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="660" y="1426" fill="#9CA3AF" font-size="9">Hỏi về dữ liệu phản hồi...</text>
+  <rect x="956" y="1408" width="52" height="28" rx="4" fill="#7C3AED"/>
+  <text x="982" y="1426" text-anchor="middle" fill="white" font-size="10" font-weight="600">Gửi</text>
+  <text x="832" y="1456" text-anchor="middle" fill="#9CA3AF" font-size="9">RAG: đọc aggregated data · cite evidence IDs · không bịa</text>
+  <text x="832" y="1470" text-anchor="middle" fill="#9CA3AF" font-size="9">Không đủ data → trả lời "insufficient_data"</text>
+  <text x="832" y="1510" text-anchor="middle" fill="#9CA3AF" font-size="9">(tính năng MVP+)</text>
+
+  <!-- ═══════════════════════════════════════════════
+       ROW 5: USER MANAGEMENT + CORRECTION LOG
+  ═══════════════════════════════════════════════ -->
+  <text x="40" y="1560" fill="#1A56A0" font-size="13" font-weight="700">④ /users (admin) &amp; Correction Log</text>
+  <line x1="40" y1="1566" x2="1360" y2="1566" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- USER MANAGEMENT -->
+  <rect x="40" y="1576" width="440" height="240" rx="8" fill="white" stroke="#1A56A0" stroke-width="2"/>
+  <rect x="40" y="1576" width="440" height="32" rx="8" fill="#1A56A0"/>
+  <rect x="40" y="1592" width="440" height="16" fill="#1A56A0"/>
+  <text x="260" y="1597" text-anchor="middle" fill="white" font-size="12" font-weight="700">USER MANAGEMENT (Admin only)</text>
+  <!-- table header -->
+  <rect x="56" y="1616" width="408" height="20" rx="3" fill="#F3F4F6"/>
+  <text x="72" y="1630" fill="#6B7280" font-size="9" font-weight="600">Email</text>
+  <text x="220" y="1630" fill="#6B7280" font-size="9" font-weight="600">Role</text>
+  <text x="290" y="1630" fill="#6B7280" font-size="9" font-weight="600">Team</text>
+  <text x="360" y="1630" fill="#6B7280" font-size="9" font-weight="600">Active</text>
+  <text x="410" y="1630" fill="#6B7280" font-size="9" font-weight="600">Action</text>
+  <!-- rows -->
+  <rect x="56" y="1640" width="408" height="20" rx="3" fill="white"/>
+  <text x="72" y="1654" fill="#374151" font-size="9">anh.le@company.vn</text>
+  <text x="220" y="1654" fill="#374151" font-size="9">analyst</text>
+  <text x="290" y="1654" fill="#374151" font-size="9">safety</text>
+  <text x="360" y="1654" fill="#16A34A" font-size="9">✓</text>
+  <text x="410" y="1654" fill="#1A56A0" font-size="9" text-decoration="underline">Edit</text>
+  <rect x="56" y="1664" width="408" height="20" rx="3" fill="#F9FAFB"/>
+  <text x="72" y="1678" fill="#374151" font-size="9">khang.nguyen@company.vn</text>
+  <text x="220" y="1678" fill="#374151" font-size="9">ops</text>
+  <text x="290" y="1678" fill="#374151" font-size="9">ops</text>
+  <text x="360" y="1678" fill="#16A34A" font-size="9">✓</text>
+  <text x="410" y="1678" fill="#1A56A0" font-size="9" text-decoration="underline">Edit</text>
+  <rect x="56" y="1688" width="408" height="20" rx="3" fill="white"/>
+  <text x="72" y="1702" fill="#374151" font-size="9">manh.nguyen@company.vn</text>
+  <text x="220" y="1702" fill="#374151" font-size="9">viewer</text>
+  <text x="290" y="1702" fill="#374151" font-size="9">product</text>
+  <text x="360" y="1702" fill="#DC2626" font-size="9">✗</text>
+  <text x="410" y="1702" fill="#1A56A0" font-size="9" text-decoration="underline">Edit</text>
+  <!-- add user button -->
+  <rect x="56" y="1716" width="120" height="24" rx="4" fill="#1A56A0"/>
+  <text x="116" y="1732" text-anchor="middle" fill="white" font-size="10" font-weight="600">+ Thêm user</text>
+  <!-- role permissions -->
+  <rect x="56" y="1748" width="408" height="52" rx="6" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="72" y="1762" fill="#1E40AF" font-size="9" font-weight="600">Phân quyền:</text>
+  <text x="72" y="1775" fill="#374151" font-size="9">admin: full · ops: dashboard+alerts+tickets · analyst: upload+review · viewer: read-only</text>
+  <text x="72" y="1788" fill="#6B7280" font-size="9">JWT token · refresh mỗi 24h · revoke khi deactivate</text>
+
+  <!-- CORRECTION LOG -->
+  <rect x="500" y="1576" width="540" height="240" rx="8" fill="white" stroke="#065F46" stroke-width="2"/>
+  <rect x="500" y="1576" width="540" height="32" rx="8" fill="#065F46"/>
+  <rect x="500" y="1592" width="540" height="16" fill="#065F46"/>
+  <text x="770" y="1597" text-anchor="middle" fill="white" font-size="12" font-weight="700">CORRECTION LOG — Closed-loop Learning</text>
+  <!-- table header -->
+  <rect x="516" y="1616" width="508" height="20" rx="3" fill="#F3F4F6"/>
+  <text x="532" y="1630" fill="#6B7280" font-size="9" font-weight="600">Feedback</text>
+  <text x="680" y="1630" fill="#6B7280" font-size="9" font-weight="600">AI gán (cũ)</text>
+  <text x="780" y="1630" fill="#6B7280" font-size="9" font-weight="600">Sửa thành</text>
+  <text x="880" y="1630" fill="#6B7280" font-size="9" font-weight="600">Người sửa</text>
+  <text x="960" y="1630" fill="#6B7280" font-size="9" font-weight="600">Lý do</text>
+  <!-- rows -->
+  <rect x="516" y="1640" width="508" height="20" rx="3" fill="#FEF2F2"/>
+  <text x="532" y="1654" fill="#374151" font-size="8">fb_003</text>
+  <text x="680" y="1654" fill="#EF4444" font-size="8">Driver Behavior</text>
+  <text x="780" y="1654" fill="#065F46" font-size="8" font-weight="600">Safety Issue</text>
+  <text x="880" y="1654" fill="#374151" font-size="8">anh.le</text>
+  <text x="960" y="1654" fill="#6B7280" font-size="8">nguy hiểm</text>
+  <rect x="516" y="1664" width="508" height="20" rx="3" fill="white"/>
+  <text x="532" y="1678" fill="#374151" font-size="8">fb_089</text>
+  <text x="680" y="1678" fill="#EF4444" font-size="8">Pricing</text>
+  <text x="780" y="1678" fill="#065F46" font-size="8" font-weight="600">App Issue</text>
+  <text x="880" y="1678" fill="#374151" font-size="8">khang.nguyen</text>
+  <text x="960" y="1678" fill="#6B7280" font-size="8">nhầm topic</text>
+  <rect x="516" y="1688" width="508" height="20" rx="3" fill="#F9FAFB"/>
+  <text x="532" y="1702" fill="#374151" font-size="8">fb_142</text>
+  <text x="680" y="1702" fill="#EF4444" font-size="8">Other</text>
+  <text x="780" y="1702" fill="#065F46" font-size="8" font-weight="600">Payment</text>
+  <text x="880" y="1702" fill="#374151" font-size="8">anh.le</text>
+  <text x="960" y="1702" fill="#6B7280" font-size="8">thanh toán lỗi</text>
+  <!-- retrain note -->
+  <rect x="516" y="1716" width="508" height="52" rx="6" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1.5"/>
+  <text x="532" y="1732" fill="#065F46" font-size="10" font-weight="600">Vòng lặp khép kín — Closed-loop Learning</text>
+  <text x="532" y="1746" fill="#374151" font-size="9">Correction logs → labeled data bổ sung → retrain TF-IDF + LinearSVC</text>
+  <text x="532" y="1760" fill="#6B7280" font-size="9">AI error report: nhãn nào hay sai nhất · lỗi nào đắt nhất (Safety false negative)</text>
+
+  <!-- ═══════════════════════════════════════════════
+       BOTTOM: FLOW SUMMARY
+  ═══════════════════════════════════════════════ -->
+  <rect x="40" y="1836" width="1320" height="100" rx="8" fill="white" stroke="#1A56A0" stroke-width="1.5"/>
+  <rect x="40" y="1836" width="1320" height="28" rx="8" fill="#1A56A0"/>
+  <rect x="40" y="1850" width="1320" height="14" fill="#1A56A0"/>
+  <text x="700" y="1853" text-anchor="middle" fill="white" font-size="11" font-weight="700">MVP FLOW TỔNG QUÁT</text>
+  <!-- flow steps -->
+  <rect x="60" y="1872" width="120" height="44" rx="4" fill="#DBEAFE" stroke="#1A56A0" stroke-width="1"/>
+  <text x="120" y="1890" text-anchor="middle" fill="#1A56A0" font-size="9" font-weight="600">Upload CSV</text>
+  <text x="120" y="1904" text-anchor="middle" fill="#374151" font-size="8">hoặc webhook</text>
+  <text x="120" y="1916" text-anchor="middle" fill="#6B7280" font-size="8">POST /ingest</text>
+  <line x1="180" y1="1894" x2="200" y2="1894" stroke="#6B7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="200" y="1872" width="120" height="44" rx="4" fill="#D1FAE5" stroke="#065F46" stroke-width="1"/>
+  <text x="260" y="1890" text-anchor="middle" fill="#065F46" font-size="9" font-weight="600">ML Classify</text>
+  <text x="260" y="1904" text-anchor="middle" fill="#374151" font-size="8">topic+sentiment</text>
+  <text x="260" y="1916" text-anchor="middle" fill="#6B7280" font-size="8">severity+confidence</text>
+  <line x1="320" y1="1894" x2="340" y2="1894" stroke="#6B7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="340" y="1872" width="120" height="44" rx="4" fill="#FEF3C7" stroke="#92400E" stroke-width="1"/>
+  <text x="400" y="1890" text-anchor="middle" fill="#92400E" font-size="9" font-weight="600">Spike Detection</text>
+  <text x="400" y="1904" text-anchor="middle" fill="#374151" font-size="8">so baseline 7 ngày</text>
+  <text x="400" y="1916" text-anchor="middle" fill="#6B7280" font-size="8">&gt;2× → alert</text>
+  <line x1="460" y1="1894" x2="480" y2="1894" stroke="#6B7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="480" y="1872" width="140" height="44" rx="4" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+  <text x="550" y="1890" text-anchor="middle" fill="#7C3AED" font-size="9" font-weight="600">Gemini Flash</text>
+  <text x="550" y="1904" text-anchor="middle" fill="#374151" font-size="8">insight+action</text>
+  <text x="550" y="1916" text-anchor="middle" fill="#6B7280" font-size="8">evidence IDs bắt buộc</text>
+  <line x1="620" y1="1894" x2="640" y2="1894" stroke="#6B7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="640" y="1872" width="120" height="44" rx="4" fill="#FEE2E2" stroke="#DC2626" stroke-width="1"/>
+  <text x="700" y="1890" text-anchor="middle" fill="#DC2626" font-size="9" font-weight="600">Alerts + Review</text>
+  <text x="700" y="1904" text-anchor="middle" fill="#374151" font-size="8">human-in-loop</text>
+  <text x="700" y="1916" text-anchor="middle" fill="#6B7280" font-size="8">edit label → log</text>
+  <line x1="760" y1="1894" x2="780" y2="1894" stroke="#6B7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="780" y="1872" width="120" height="44" rx="4" fill="#E0F2FE" stroke="#0369A1" stroke-width="1"/>
+  <text x="840" y="1890" text-anchor="middle" fill="#0369A1" font-size="9" font-weight="600">Ticket + SLA</text>
+  <text x="840" y="1904" text-anchor="middle" fill="#374151" font-size="8">assign phòng ban</text>
+  <text x="840" y="1916" text-anchor="middle" fill="#6B7280" font-size="8">Safety: 2h deadline</text>
+  <line x1="900" y1="1894" x2="920" y2="1894" stroke="#6B7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="920" y="1872" width="140" height="44" rx="4" fill="#DBEAFE" stroke="#1A56A0" stroke-width="1"/>
+  <text x="990" y="1890" text-anchor="middle" fill="#1A56A0" font-size="9" font-weight="600">Dashboard Ops</text>
+  <text x="990" y="1904" text-anchor="middle" fill="#374151" font-size="8">KPI+trend+heatmap</text>
+  <text x="990" y="1916" text-anchor="middle" fill="#6B7280" font-size="8">real-time 10 phút</text>
+  <line x1="1060" y1="1894" x2="1080" y2="1894" stroke="#6B7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="1080" y="1872" width="140" height="44" rx="4" fill="#F0FDF4" stroke="#065F46" stroke-width="1"/>
+  <text x="1150" y="1890" text-anchor="middle" fill="#065F46" font-size="9" font-weight="600">Correction Log</text>
+  <text x="1150" y="1904" text-anchor="middle" fill="#374151" font-size="8">closed-loop</text>
+  <text x="1150" y="1916" text-anchor="middle" fill="#6B7280" font-size="8">→ retrain ML</text>
+  <!-- curved back arrow -->
+  <path d="M1220,1894 C1270,1894 1280,1850 1280,1840 C1280,1830 1260,1825 700,1825 C140,1825 60,1830 60,1840 C60,1850 60,1870 60,1872" fill="none" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4,2" marker-end="url(#arrowGray)"/>
+  <text x="700" y="1823" text-anchor="middle" fill="#9CA3AF" font-size="8">vòng lặp cải thiện liên tục</text>
+
+  <!-- DEFS: arrow markers, gradients -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#6B7280"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#9CA3AF"/>
+    </marker>
+    <linearGradient id="heatGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D1FAE5"/>
+      <stop offset="50%" style="stop-color:#FEF3C7"/>
+      <stop offset="100%" style="stop-color:#FEE2E2"/>
+    </linearGradient>
+  </defs>
+</svg>
