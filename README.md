@@ -4,10 +4,10 @@
 ## Nhóm
 
 | Thành viên | MSSV | Role |
-|---|---|---|
-| Lê Quốc Anh | 2A202600824 | AI/Data — ML pipeline, NLP, LLM |
-| Nguyễn Đức Khang | 2A202600588 | Backend — Supabase, API, scheduler |
-| Nguyễn Đức Mạnh | 2A202600945 | Frontend — Dashboard, Alerts, Tickets |
+|---|---|
+| Lê Quốc Anh | 2A202600824 | 
+| Nguyễn Đức Khang | 2A202600588 | 
+| Nguyễn Đức Mạnh | 2A202600945 |
 
 ## Tổng quan
 
